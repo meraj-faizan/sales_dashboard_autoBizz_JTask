@@ -17,7 +17,7 @@ const DashboardLayout = ({
         } as CSSProperties
       }
     >
-      <AppSidebar />
+      {/* <AppSidebar /> */}
       <main className="grow p-5">{children}</main>
     </SidebarProvider>
   );

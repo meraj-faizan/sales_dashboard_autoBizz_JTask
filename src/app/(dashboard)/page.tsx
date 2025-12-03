@@ -80,13 +80,15 @@ const DashboardPage = () => {
             <SalesChart data={totalSales} />
           </section>
 
-          <section className="bg-white p-6 rounded-lg shadow-md overflow-x-auto">
+          <section className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold mb-4">Sales Details</h2>
-            <SalesTable
-              sales={sales}
-              currentQuery={currentQuery}
-              onSort={handleSort}
-            />
+            <div className="w-[255px] sm:w-full overflow-hidden overflow-x-auto">
+              <SalesTable
+                sales={sales}
+                currentQuery={currentQuery}
+                onSort={handleSort}
+              />
+            </div>
 
             <SalesPaginationControls
               pagination={pagination}

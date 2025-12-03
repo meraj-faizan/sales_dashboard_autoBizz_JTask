@@ -9,10 +9,8 @@ interface SalesTableProps {
 
 const getSortIcon = (key: "date" | "price", query: ISalesQuery) => {
   if (query.sortBy !== key) {
-    // Show a neutral icon if the column is sortable but not currently sorted
     return <ArrowUpDown size={14} className="text-gray-400" />;
   }
-  // Show the directional icon if the column is the active sort key
   return query.sortOrder === "asc" ? (
     <ArrowUp size={14} />
   ) : (
@@ -26,7 +24,7 @@ export const SalesTable = ({
   onSort,
 }: SalesTableProps) => {
   return (
-    <table className="min-w-full divide-y divide-gray-200">
+    <table className="w-full divide-y divide-gray-200">
       <thead className="bg-gray-50">
         <tr>
           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
