@@ -23,7 +23,7 @@ import {
 import { useSidebarMenu } from "@/hooks/useSidebarMenu";
 import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -42,23 +42,17 @@ export const AppSidebar = () => {
   };
 
   const user = {
-    name: "Farazy Admin",
-    email: "admin@farazy-eye-care.com",
-    avatar: "/logo.webp",
+    name: "Super Admin",
+    email: "admin@sales.com",
+    avatar: "/placeholder.png",
   };
 
   return (
-    <Sidebar className="shadow-[0_10px_30px_0_rgba(38,3,71,0.06)] !border-0">
+    <Sidebar variant="inset"  className="shadow-[0_10px_30px_0_rgba(38,3,71,0.06)] !border-0">
       {/* Logo */}
       <SidebarHeader className="py-4 md:px-5 px-1">
         <Link href="/" className="flex items-center justify-center">
-          <Image
-            src="/logo.webp"
-            width={150}
-            height={50}
-            className="md:w-[150px] md:h-[50px] w-[150px] h-auto object-contain"
-            alt={`${process.env.NEXT_PUBLIC_APP_NAME}`}
-          />
+          <h1 className="text-2xl font-bold text-primary">{process.env.NEXT_PUBLIC_APP_NAME}</h1>
         </Link>
       </SidebarHeader>
 

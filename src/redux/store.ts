@@ -1,6 +1,7 @@
 import { authReducer } from "@/features/auth/store/auth.slice";
 import { userReducer } from "@/features/user/store/user.slice";
 import { baseApi } from "@/redux/api/baseApi";
+import { salesReducer } from "@/features/sales/store/sales.slice";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import {
   FLUSH,
@@ -22,6 +23,7 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
+  sales: salesReducer,
   user: userReducer,
   auth: authReducer,
   [baseApi.reducerPath]: baseApi.reducer,

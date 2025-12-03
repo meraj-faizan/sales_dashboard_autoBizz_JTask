@@ -52,5 +52,4 @@ export interface UseAuthReturn {
   getUserRole: () => IRole | null;
   hasRole: (requiredRoles: IRole[]) => boolean;
   isSuperAdmin: () => boolean;
-  isAdmin: () => boolean;
 }

@@ -5,18 +5,19 @@ export const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.NEXT_PUBLIC_API_URL,
-    credentials: "include",
+    // credentials: "include",
     prepareHeaders: (headers, { getState }) => {
       const token = (getState() as RootState).auth?.token;
-
+      console.log(token);
       if (token) {
-        headers.set("Authorization", `${token}`);
+        headers.set("X-AUTOBIZZ-TOKEN", `${token}`);
       }
 
       return headers;
     },
   }),
   tagTypes: [
+    "sales",
     "auth",
     "articles",
     "articleCategories",

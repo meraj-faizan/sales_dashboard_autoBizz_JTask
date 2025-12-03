@@ -1,28 +1,7 @@
 export enum IRole {
   SUPER_ADMIN = "SUPER_ADMIN",
-  BRANCH_ADMIN = "BRANCH_ADMIN",
-  ADMIN = "ADMIN",
-  EMPLOYEE = "EMPLOYEE",
-  DOCTOR = "DOCTOR",
-  PATIENT = "PATIENT",
 }
 
-export enum IGender {
-  MALE = "MALE",
-  FEMALE = "FEMALE",
-  OTHER = "OTHER",
-}
-
-export enum IBloodGroup {
-  "O+" = "O+",
-  "O-" = "O-",
-  "A+" = "A+",
-  "A-" = "A-",
-  "B+" = "B+",
-  "B-" = "B-",
-  "AB+" = "AB+",
-  "AB-" = "AB-",
-}
 
 export interface IEmployee {
   id: string;

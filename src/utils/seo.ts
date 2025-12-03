@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "My Genie";
+const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Sales Dashboard";
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 const APP_DESCRIPTION = "A best service provider for all your needs.";
 const APP_IMAGE = "/social.jpg";

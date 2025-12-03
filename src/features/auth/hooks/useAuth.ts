@@ -157,11 +157,6 @@ export const useAuth = (): UseAuthReturn => {
     [hasRole]
   );
 
-  const isAdmin = useCallback(
-    (): boolean => hasRole([IRole.ADMIN, IRole.SUPER_ADMIN]),
-    [hasRole]
-  );;
-
   return {
     user,
     token,
@@ -176,6 +171,5 @@ export const useAuth = (): UseAuthReturn => {
     getUserRole,
     hasRole,
     isSuperAdmin,
-    isAdmin,
   };
 };

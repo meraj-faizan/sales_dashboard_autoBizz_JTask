@@ -24,7 +24,7 @@ export default function Component() {
         {/* Footer */}
         <div className="text-center mt-8 text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} My Genie. All rights reserved.
+            &copy; {new Date().getFullYear()} Sales Dashboard. All rights reserved.
           </p>
         </div>
       </div>

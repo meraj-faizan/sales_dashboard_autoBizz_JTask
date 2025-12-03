@@ -1,5 +1,5 @@
 {
-  "name": "My Genie",
+  "name": "sales_dashboard_autobizz",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -55,6 +55,7 @@
     "react-phone-number-input": "^3.4.12",
     "react-photo-view": "^1.2.7",
     "react-redux": "^9.2.0",
+    "recharts": "^3.5.1",
     "redux-persist": "^6.0.0",
     "rsuite": "^5.83.3",
     "sonner": "^2.0.7",
@@ -70,6 +71,7 @@
     "@types/papaparse": "^5.3.16",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/recharts": "^1.8.29",
     "@types/stripe-v3": "^3.1.33",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
