@@ -1,6 +1,6 @@
 "use client";
 
-import { AppSidebar } from "@/components/app-sidebar/AppSidebar";
+// import { AppSidebar } from "@/components/app-sidebar/AppSidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import type { CSSProperties } from "react";
 
