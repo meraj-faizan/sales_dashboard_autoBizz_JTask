@@ -33,7 +33,7 @@ export interface TokenResponse {
 export interface ISalesQuery {
   startDate: string;
   endDate: string;
-  priceMin?: string | number;
+  priceMin?: string;
   email?: string;
   phone?: string;
   sortBy: "date" | "price";

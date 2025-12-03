@@ -7,9 +7,10 @@ import { ISalesQuery } from "../sales.interface";
 import { setToken } from "@/features/auth/store/auth.slice";
 import { useAppDispatch } from "@/redux/hook";
 
+// make the end date to be the current date 
 const INITIAL_QUERY: ISalesQuery = {
   startDate: "2025-01-01",
-  endDate: "2025-01-01",
+  endDate: new Date().toISOString().split("T")[0],
   sortBy: "date",
   sortOrder: "asc",
   priceMin: "",

@@ -65,8 +65,6 @@ const DashboardPage = () => {
         onFilterChange={handleFilterChange}
       />
 
-      <hr className="my-4" />
-
       {isEmpty ? (
         <div className="text-center p-10 border border-gray-200 rounded-lg bg-white">
           <p className="text-lg text-gray-500">
